@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-/* stat section 1,2 */
-@media screen and (max-width: 900px) {
+/* 태블릿 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
   /* happynewyear txt*/
   .event p {
     font-size: 50px;
@@ -60,61 +60,15 @@
     -webkit-line-clamp: 1; /*두번쨰가 ...처리*/
     -webkit-box-orient: vertical; /*기준 vertical*/
   }
-}
-
-/* 태블릿 */
-@media screen and (max-width: 768px) {
-  /* happynewyear txt*/
-  .event p {
-    font-size: 40px;
-  }
-  /* event txt */
-  .et-inner span {
-    font-size: 18px;
-  }
-  /* 전체 텍스트 */
-  .txt-wrap h3 {
-    font-size: 14px;
-  }
-  .txt-wrap span {
-    font-size: 14px;
-  }
-  .txt-wrap p {
-    font-size: 14px;
-  }
-  /* stat 섹션 */
-  .stat-section1 .stat {
-    width: calc((100% - 20px) / 2) !important;
-  }
-  .stat-section2 .stat {
-    width: calc((100% - 20px) / 2) !important;
-  }
-  /*  */
-  .bt-inner h2 {
-    font-size: 28px;
-  }
-  .new-inner h2 {
-    font-size: 28px;
-  }
-  .rec-inner h2 {
-    font-size: 28px;
-  }
-  .header-bt-inner > .menu > li > a {
-    width: 80%;
-    height: 80%;
-  }
-  .bestSwiper {
-    width: 80%;
-  }
-  /* 스와이퍼 버튼 */
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
-    font-size: 24px !important;
+  .marquee span {
+    float: left;
+    width: 50%;
+    font-size: 13px !important;
   }
 }
 
 /* 모바일 */
-@media screen and (max-width: 500px) {
+@media (max-width: 480px) {
   /* happynewyear txt*/
   .event p {
     font-size: 35px;
@@ -148,40 +102,9 @@
   .txt .eng_1 {
     display: none;
   }
-}
-@media screen and (max-width: 390px) {
-  /* happynewyear txt*/
-  .event p {
-    font-size: 30px;
-  }
-  /* event txt */
-  .et-inner span {
-    font-size: 14px;
-  }
-  /* 전체 텍스트 */
-  .txt-wrap h3 {
-    font-size: 13px;
-  }
-  .txt-wrap span {
-    font-size: 13px;
-  }
-  .txt-wrap p {
-    font-size: 13px;
-  }
-  /* inner h2 텍스트 */
-  .bt-inner h2 {
-    font-size: 26px;
-  }
-  .new-inner h2 {
-    font-size: 26px;
-  }
-  .rec-inner h2 {
-    font-size: 26px;
-  }
-  .bt-inner {
-    width: 90% !important;
-  }
-  .recommand {
-    margin-top: ;
+  .marquee span {
+    float: left;
+    width: 100%;
+    font-size: 10px !important;
   }
 }

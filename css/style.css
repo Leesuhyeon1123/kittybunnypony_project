@@ -23,6 +23,7 @@ body {
 /* 폰트 크기 14px 밑으로 x */
 .txt-wrap {
   width: 100%;
+  padding: 4% 0;
 }
 .txt-wrap h3 {
   font-size: 17px;
@@ -79,6 +80,7 @@ body {
 .marquee span {
   float: left;
   width: 50%;
+  font-size: 15px;
 }
 
 @keyframes marquee {
@@ -168,20 +170,22 @@ body {
 .bt-inner {
   width: 80%;
   max-width: 1750px;
-  padding: 100px 0;
+  padding: 4% 0;
   margin: auto;
   position: relative;
-  /* background-color: pink; */
+  background-color: yellow;
 }
 .bt-inner h2 {
   margin: 10% 0 5% 0;
   text-align: center;
   font-size: 35px;
   font-weight: bold;
+  background-color: orange;
 }
 .bestSwiper {
   width: 80% !important;
   width: auto;
+  background-color: blue;
 }
 
 .bestSwiper .swiper-slide img {
@@ -221,20 +225,24 @@ body {
 }
 .new-inner {
   width: 80%;
+  max-width: 1750px;
+  padding: 5% 0;
   margin: auto;
   position: relative;
+  background-color: pink;
 
   /* background-color: pink; */
 }
 .new-inner h2 {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin: 10% 0 5% 0;
   text-align: center;
   font-size: 35px;
   font-weight: bold;
+  background-color: aqua;
 }
 .newSwiper {
   width: 80%;
+  background-color: blue;
 }
 
 .newSwiper .swiper-slide img {
@@ -249,11 +257,15 @@ body {
 .event-sec {
   position: relative;
   width: 100%;
-  height: 40%;
 }
 .event-sec img {
   width: 100%;
   display: block;
+  object-fit: cover; /* 이미지가 비율을 유지하며 영역을 채우도록 설정 */
+  transition: filter 0.5s ease; /* 0.5초 동안 서서히 변화 */
+}
+.event:hover img {
+  filter: brightness(20%); /* 호버 시 이미지 어둡게 */
 }
 .event p {
   text-align: center;
@@ -262,9 +274,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 5vw;
+  font-size: 3vw;
   color: #fff;
+  font-style: italic;
 }
+
 /* event-txt 영역 */
 .event-txt {
   position: relative;
@@ -289,7 +303,8 @@ body {
   min-width: 360px;
   text-align: center;
   margin: auto;
-  margin-top: 20%;
+  margin-top: 5%;
+  font-size: 1vw;
 }
 
 /* recommand 영역 */
@@ -345,7 +360,7 @@ body {
   color: #fff;
 }
 .brand-title {
-  font-size: 20px;
+  font-size: 2vw;
 }
 .brand-description {
   margin-top: 35px;
