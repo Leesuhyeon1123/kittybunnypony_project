@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+/* stat section 1,2 */
+@media screen and (max-width: 900px) {
+  /* happynewyear txt*/
+  .event p {
+    font-size: 50px;
+  }
+  /* event txt */
+  .et-inner span {
+    font-size: 20px;
+  }
+  /* 전체 텍스트 */
+  .txt-wrap h3 {
+    font-size: 15px;
+  }
+  .txt-wrap span {
+    font-size: 14px;
+  }
+  .txt-wrap p {
+    font-size: 14px;
+  }
+  /* inner h2 */
+  .new-inner h2 {
+    font-size: 25px !important;
+  }
+  .bt-inner h2 {
+    font-size: 25px !important;
+  }
+  .rec-inner h2 {
+    font-size: 25px !important;
+  }
+
+  /* stat 섹션 */
+
+  .stat-section1 .stat {
+    width: calc((100% - 80px) / 4) !important;
+  }
+  /* .stat-section2 .stat {
+    display: block;
+    width: calc((100% - 80px) / 4) !important;
+  } */
+
+  /* 스와이퍼 버튼 */
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 28px !important;
+  }
+  /* event txt */
+  .txt .eng_2 {
+    /* 1. 높이가 있어야 합니다. */
+    height: 36px;
+    /* 2. 넘치는 영역을 가린다. */
+    overflow: hidden;
+    /* 3. display: -webkit-box */
+    display: -webkit-box;
+    /* 4. text-overflow: elipsis */
+    text-overflow: ellipsis;
+    /* 5. 아래 코드를 입력한다. */
+    -webkit-line-clamp: 1; /*두번쨰가 ...처리*/
+    -webkit-box-orient: vertical; /*기준 vertical*/
+  }
+}
+
+/* 태블릿 */
+@media screen and (max-width: 768px) {
+  /* happynewyear txt*/
+  .event p {
+    font-size: 40px;
+  }
+  /* event txt */
+  .et-inner span {
+    font-size: 18px;
+  }
+  /* 전체 텍스트 */
+  .txt-wrap h3 {
+    font-size: 14px;
+  }
+  .txt-wrap span {
+    font-size: 14px;
+  }
+  .txt-wrap p {
+    font-size: 14px;
+  }
+  /* stat 섹션 */
+  .stat-section1 .stat {
+    width: calc((100% - 20px) / 2) !important;
+  }
+  .stat-section2 .stat {
+    width: calc((100% - 20px) / 2) !important;
+  }
+  /*  */
+  .bt-inner h2 {
+    font-size: 28px;
+  }
+  .new-inner h2 {
+    font-size: 28px;
+  }
+  .rec-inner h2 {
+    font-size: 28px;
+  }
+  .header-bt-inner > .menu > li > a {
+    width: 80%;
+    height: 80%;
+  }
+  .bestSwiper {
+    width: 80%;
+  }
+  /* 스와이퍼 버튼 */
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 24px !important;
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width: 500px) {
+  /* happynewyear txt*/
+  .event p {
+    font-size: 35px;
+  }
+  /* event txt */
+  .et-inner span {
+    font-size: 16px;
+  }
+  /* 전체 텍스트 */
+  .txt-wrap h3 {
+    font-size: 14px;
+  }
+  .txt-wrap span {
+    font-size: 14px;
+  }
+  .txt-wrap p {
+    font-size: 14px;
+  }
+  /*  */
+  .bt-inner h2 {
+    font-size: 26px;
+  }
+  .new-inner h2 {
+    font-size: 26px;
+  }
+  .rec-inner h2 {
+    font-size: 26px;
+  }
+  /* event txt */
+  .txt .eng_2,
+  .txt .eng_1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 390px) {
+  /* happynewyear txt*/
+  .event p {
+    font-size: 30px;
+  }
+  /* event txt */
+  .et-inner span {
+    font-size: 14px;
+  }
+  /* 전체 텍스트 */
+  .txt-wrap h3 {
+    font-size: 13px;
+  }
+  .txt-wrap span {
+    font-size: 13px;
+  }
+  .txt-wrap p {
+    font-size: 13px;
+  }
+  /* inner h2 텍스트 */
+  .bt-inner h2 {
+    font-size: 26px;
+  }
+  .new-inner h2 {
+    font-size: 26px;
+  }
+  .rec-inner h2 {
+    font-size: 26px;
+  }
+  .bt-inner {
+    width: 90% !important;
+  }
+  .recommand {
+    margin-top: ;
+  }
+}

@@ -1,0 +1,81 @@
+diff a/css/responsive.css b/css/responsive.css	(rejected hunks)
+@@ -0,0 +1,79 @@
++@charset "utf-8";
++
++/* stat section 1,2 */
++@media screen and (max-width: 1000px) {
++  /* 전체 텍스트 */
++  .txt-wrap h3 {
++    font-size: 15px;
++  }
++  .txt-wrap span {
++    font-size: 14px;
++  }
++  .txt-wrap p {
++    font-size: 14px;
++  }
++
++  /* stat 섹션 */
++  .stat-section1 .stat {
++    width: calc((100% - 40px) / 3) !important;
++  }
++  .stat-section2 .stat {
++    width: calc((100% - 40px) / 3) !important;
++  }
++}
++
++/* 태블릿 */
++@media screen and (max-width: 768px) {
++  /* 전체 텍스트 */
++  .txt-wrap h3 {
++    font-size: 14px;
++  }
++  .txt-wrap span {
++    font-size: 14px;
++  }
++  .txt-wrap p {
++    font-size: 14px;
++  }
++  /* stat 섹션 */
++  .stat-section1 .stat {
++    width: calc((100% - 20px) / 2) !important;
++  }
++  .stat-section2 .stat {
++    width: calc((100% - 20px) / 2) !important;
++  }
++  /*  */
++  .bt-inner h2 {
++    font-size: 28px;
++  }
++  .new-inner h2 {
++    font-size: 28px;
++  }
++  .header-bt-inner > .menu > li > a {
++    width: 80%;
++    height: 80%;
++  }
++  .bestSwiper {
++    width: 80%;
++  }
++}
++
++/* 모바일 */
++@media screen and (min-width: 390px) {
++  /* 전체 텍스트 */
++  .txt-wrap h3 {
++    font-size: 14px;
++  }
++  .txt-wrap span {
++    font-size: 14px;
++  }
++  .txt-wrap p {
++    font-size: 14px;
++  }
++  /*  */
++  .bt-inner h2 {
++    font-size: 26px;
++  }
++  .new-inner h2 {
++    font-size: 26px;
++  }
++}

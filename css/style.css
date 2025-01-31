@@ -1,0 +1,489 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poiret+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("responsive.css"); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+body {
+  font-family: "Noto Sans KR", serif;
+}
+
+/* 전체 폰트 */
+/* 폰트 크기 14px 밑으로 x */
+.txt-wrap {
+  width: 100%;
+}
+.txt-wrap h3 {
+  font-size: 17px;
+}
+.txt-wrap span {
+  width: 100%;
+  display: block;
+  font-size: 15px;
+  white-space: nowrap; /* 텍스트를 한 줄로 제한 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.txt-wrap p {
+  font-size: 15px;
+  margin-top: 1%;
+}
+
+/* 전체영역 */
+.wrap {
+  width: 100%;
+  /* height: 2000vh; */
+  background-color: #fff;
+}
+/* ------상단------ */
+.header {
+  position: relative;
+  display: block;
+  width: 100%;
+  /* height: 130px; */
+  /* background-color: orange; */
+}
+
+/* 슬라이드 상단 배너 */
+.marquee {
+  color: #fff;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 40px;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  animation: marquee 12s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+/* 헤더 */
+.header-bt {
+  position: relative;
+  width: 100%;
+}
+.header-bt-inner {
+  max-width: 1750px;
+  /* height: 80px; */
+  padding: 10px 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* 메뉴 */
+.header-bt-inner > .menu {
+  width: 120px;
+  /* height: 100%; */
+  display: flex;
+}
+.header-bt-inner > .menu > li {
+  width: 100%;
+  /* height: 100%; */
+}
+.header-bt-inner > .menu > li > a {
+  width: 100%;
+  /* height: 100%; */
+  text-align: center;
+}
+/* 로고 */
+.header-bt-inner > .logo {
+  position: relative;
+  width: 30%;
+  max-width: 286px;
+  min-width: 150px;
+  height: 100%;
+}
+.header-bt-inner > .logo > a > img {
+  margin-top: 10px;
+  width: 100%;
+}
+/* 로그인 */
+.header-bt-inner > .login {
+  width: 100px;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+}
+.header-bt-inner > .login > li > a > img {
+  width: 100%;
+}
+.login > li > a > p {
+  font-size: 20px;
+  margin-top: -5px;
+  color: #000;
+}
+
+/*------visual------ 영역*/
+.visualSwiper {
+  width: 100%;
+  /* height: 900px; */
+  height: 46vw;
+}
+.visualSwiper .swiper-slide {
+  width: 100%;
+}
+.visualSwiper .swiper-slide img {
+  width: 100%;
+  /* height: 100%; */
+  display: block;
+  object-fit: cover;
+}
+/* ------best seller------ 영역 */
+.bt-inner {
+  width: 80%;
+  max-width: 1750px;
+  padding: 100px 0;
+  margin: auto;
+  position: relative;
+  /* background-color: pink; */
+}
+.bt-inner h2 {
+  margin: 10% 0 5% 0;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+.bestSwiper {
+  width: 80% !important;
+  width: auto;
+}
+
+.bestSwiper .swiper-slide img {
+  width: 100%;
+}
+.best-txt {
+  padding: 0 20px;
+}
+
+/* best영역 슬라이드 버튼 위치,컬러,크기 */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #747474 !important;
+  width: 10% !important;
+}
+.swiper-button-next:after,
+.swiper-button-next::before {
+}
+.swiper-button-next:after {
+  position: absolute;
+  left: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 99999;
+}
+.swiper-button-prev:after {
+  position: absolute;
+  right: 35px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* new arrival 영역 */
+.newarrival {
+  width: 100%;
+  margin-bottom: 10%;
+}
+.new-inner {
+  width: 80%;
+  margin: auto;
+  position: relative;
+
+  /* background-color: pink; */
+}
+.new-inner h2 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+.newSwiper {
+  width: 80%;
+}
+
+.newSwiper .swiper-slide img {
+  width: 100%;
+}
+
+/* event 영역 */
+.event {
+  width: 100%;
+  position: relative;
+}
+.event-sec {
+  position: relative;
+  width: 100%;
+  height: 40%;
+}
+.event-sec img {
+  width: 100%;
+  display: block;
+}
+.event p {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+  color: #fff;
+}
+/* event-txt 영역 */
+.event-txt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  word-break: keep-all;
+  margin: auto;
+  font-size: 2vw;
+  background-color: #e5e4e0;
+}
+
+.et-inner {
+  position: relative;
+  width: 80%;
+  background-color: #e5e4e0;
+}
+.et-inner .txt {
+  width: 100%;
+  max-width: 1350px;
+  min-width: 360px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20%;
+}
+
+/* recommand 영역 */
+.recommand {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10%;
+  background-color: #e5e4e0;
+}
+.rec-inner {
+  position: relative;
+  width: 80%;
+  background-color: #e5e4e0;
+}
+.rec-inner h2 {
+  font-family: "Inter", serif;
+  margin: 10% 0 5% 0;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+.recSwiper {
+  width: 80%;
+}
+.recSwiper img {
+  width: 100%;
+}
+
+/* info영역 -브랜드소개 */
+.info {
+  width: 100%;
+  display: flex;
+}
+
+/* 브랜드소개 */
+.banner1 {
+  width: calc(100% / 2);
+  position: relative;
+}
+.banner1 img {
+  width: 100%;
+}
+.banner1 p {
+  width: 100%;
+  position: absolute;
+  top: 18%; /* 세로 중앙 */
+  left: 50%; /* 가로 중앙 */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.brand-title {
+  font-size: 20px;
+}
+.brand-description {
+  margin-top: 35px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+/* 회사소개 */
+.banner2 {
+  width: calc(100% / 2);
+  position: relative;
+}
+.banner2 img {
+  width: 100%;
+}
+.banner2 p {
+  width: 100%;
+  position: absolute;
+  top: 18%; /* 세로 중앙 */
+  left: 50%; /* 가로 중앙 */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* stationtery 영역 */
+.stationery {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stat-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  padding: 10% 0;
+}
+.stat-inner h2 {
+  font-family: "Inter", serif;
+  margin: 10% 0 5% 0;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+/* stat 섹션1 */
+.stat-section1 {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.stat-section1 .stat {
+  width: calc((100% - 80px) / 5);
+  /* width: calc(100% - 80px) / 5 ; */
+}
+.stat-section1 img {
+  width: 100%;
+  display: block;
+}
+/* stat 섹션2 */
+/* .stat-section2 {
+  margin: 2% 0;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+} */
+/* .stat-section2 .stat {
+  width: calc((100% - 80px) / 5);
+  
+}
+.stat-section2 img {
+  width: 100%;
+  display: block;
+} */
+
+/* 하단 */
+.footer {
+  width: 100%;
+  display: block;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+.footer-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 100%;
+  background-color: #000;
+}
+.footer-left {
+  width: 80%;
+
+  /* background-color: red; */
+}
+/* 로고 */
+.footer-left .logo {
+  /* position: absolute;
+  top: 10%; */
+  width: 300px;
+  margin-bottom: 50px;
+  /* background-color: orange; */
+}
+.footer-left .logo img {
+  display: block;
+  width: 100%;
+}
+/* 회사 정보란 */
+.footer-info {
+  /* position: absolute;
+  top: 80%;
+  width: 90%; */
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Inter";
+  font-style: normal;
+  gap: 40px;
+  font-size: 14px;
+  display: block;
+  /* background-color: pink; */
+}
+/* 푸터 오른쪽 */
+.footer-right {
+  width: 10%;
+  height: 100%;
+  color: #fff;
+  display: block;
+  letter-spacing: 0.5px; /* 글자 간격 설정 (2px은 예시 값) */
+  margin: 20px 0;
+  z-index: 999;
+}
+.footer-right ul li a {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
