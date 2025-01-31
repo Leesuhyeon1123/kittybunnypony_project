@@ -121,6 +121,7 @@ body {
   /* height: 100%; */
   text-align: center;
 }
+
 /* 로고 */
 .header-bt-inner > .logo {
   position: relative;
@@ -165,6 +166,9 @@ body {
   /* height: 100%; */
   display: block;
   object-fit: cover;
+}
+.visualSwiper  .swiper-pagination-bullet-active{
+  background: #fff;
 }
 /* ------best seller------ 영역 */
 .bt-inner {
