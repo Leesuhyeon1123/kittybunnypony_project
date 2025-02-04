@@ -179,7 +179,7 @@ body {
 .m-visualSwiper {
   width: 100%;
   background-color: pink;
-  height: 550px;
+  height: 500px;
 }
 .m-visualSwiper .swiper-slide {
   width: 100%;
@@ -329,7 +329,6 @@ body {
   word-break: keep-all;
   font-size: 1.5vw;
   background-color: #e5e4e0;
-  
 }
 
 /* recommand 영역 */

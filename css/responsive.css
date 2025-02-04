@@ -25,7 +25,6 @@
   .et-inner span {
     font-size: 1.5vw;
     word-break: keep-all;
-    background-color: red;
     display: block;
   }
   /* 전체 텍스트 */
@@ -157,7 +156,6 @@
   .et-inner span {
     font-size: 10px;
     word-break: keep-all;
-    background-color: red;
     display: block;
   }
   /*all-title 텍스트(브랜드,상품명,가격) */
