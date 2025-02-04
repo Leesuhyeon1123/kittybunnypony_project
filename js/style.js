@@ -13,6 +13,22 @@ window.onload = function () {
       clickable: true,
     },
   });
+
+  // 모바일 비주얼 영역
+  const MvisualSwiper = new Swiper(".m-visualSwiper", {
+    loop: true,
+    autoplay: {
+      // 초단위
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    pagination: {
+      el: ".m-visualSwiper .swiper-pagination",
+      clickable: true,
+    },
+  });
+
   // best seller 영역
   const bestSwiper = new Swiper(".bestSwiper", {
     navigation: {

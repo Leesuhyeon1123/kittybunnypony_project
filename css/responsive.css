@@ -15,13 +15,18 @@
     width: 100%;
     height: 30vw;
   }
+
   /* happynewyear txt*/
   .event p {
-    font-size: 50px;
+    font-size: 30px !important;
   }
+
   /* event txt */
   .et-inner span {
-    font-size: 20px;
+    font-size: 1.5vw;
+    word-break: keep-all;
+    background-color: red;
+    display: block;
   }
   /* 전체 텍스트 */
   .txt-wrap h3 {
@@ -41,6 +46,9 @@
     font-size: 25px !important;
   }
   .rec-inner h2 {
+    font-size: 25px !important;
+  }
+  .stat-inner h2 {
     font-size: 25px !important;
   }
   /* stat 섹션 */
@@ -77,6 +85,14 @@
     width: 50%;
     font-size: 13px !important;
   }
+  /*all-title 텍스트(브랜드,상품명,가격) */
+  .txt-wrap h3 {
+    font-size: 17px !important;
+  }
+  .txt-wrap span,
+  p {
+    font-size: 15px !important;
+  }
 }
 
 /* 모바일 */
@@ -88,23 +104,19 @@
   .icon2 {
     display: none;
   }
-  /* 비주얼 영역 */
-  .visualSwiper {
-    width: 100%;
-    height: 80vw !important;
-    background-color: aqua;
+  .visual {
+    display: none;
   }
-  .visualSwiper img {
-    background-image: url(../images/visual1m.jpg);
+  /*------m-visual------ 영역*/
+  .m-visual {
+    display: block !important;
   }
+
   /* happynewyear txt*/
   .event p {
-    font-size: 35px;
+    font-size: 25px !important;
   }
-  /* event txt */
-  .et-inner span {
-    font-size: 16px;
-  }
+
   /* 전체 텍스트 */
   .txt-wrap h3 {
     font-size: 14px;
@@ -115,15 +127,21 @@
   .txt-wrap p {
     font-size: 14px;
   }
-  /*  */
+  /* inner-h2 */
   .bt-inner h2 {
-    font-size: 26px;
+    font-size: 24px !important;
   }
   .new-inner h2 {
-    font-size: 26px;
+    font-size: 24px !important;
   }
   .rec-inner h2 {
-    font-size: 26px;
+    font-size: 24px !important;
+  }
+  .stat-inner h2 {
+    font-size: 24px !important;
+  }
+  .stat-inner .txt-wrap h3 {
+    font-size: 10px !important;
   }
   /* event txt */
   .txt .eng_2,
@@ -134,5 +152,44 @@
     float: left;
     width: 100%;
     font-size: 10px !important;
+  }
+  /* 이벤트 설명 */
+  .et-inner span {
+    font-size: 10px;
+    word-break: keep-all;
+    background-color: red;
+    display: block;
+  }
+  /*all-title 텍스트(브랜드,상품명,가격) */
+  .txt-wrap h3 {
+    font-size: 15px !important;
+    word-break: break-word !important;
+  }
+  .txt-wrap span,
+  p {
+    font-size: 10px !important;
+    word-break: break-word;
+  }
+  /* 스와이퍼 버튼 사이즈 변경 */
+
+  .swiper-button-next:after {
+    position: absolute;
+    left: 35px;
+    font-size: 30px !important;
+    font-weight: bold;
+    z-index: 99999;
+  }
+  .swiper-button-prev:after {
+    position: absolute;
+    right: 35px;
+    font-size: 30px !important;
+    font-weight: bold;
+  }
+  /* footer 영역*/
+  .info1 li {
+    font-size: 10px;
+  }
+  .footer-right {
+    display: none !important;
   }
 }

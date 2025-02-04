@@ -27,6 +27,7 @@ body {
 }
 .txt-wrap h3 {
   font-size: 17px;
+  display: block;
 }
 .txt-wrap span {
   width: 100%;
@@ -37,6 +38,7 @@ body {
   text-overflow: ellipsis;
 }
 .txt-wrap p {
+  display: block;
   font-size: 15px;
   margin-top: 1%;
 }
@@ -164,12 +166,32 @@ body {
 .visualSwiper .swiper-slide img {
   width: 100%;
   /* height: 100%; */
-  display: block;
   object-fit: cover;
 }
 .visualSwiper .swiper-pagination-bullet-active {
   background: #fff;
 }
+
+/*------m-visual------ 영역*/
+.m-visual {
+  display: none; /* 기본적으로 숨김 */
+}
+.m-visualSwiper {
+  width: 100%;
+  background-color: pink;
+  height: 550px;
+}
+.m-visualSwiper .swiper-slide {
+  width: 100%;
+}
+.m-visualSwiper .swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+.m-visualSwiper .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
 /* ------best seller------ 영역 */
 .bt-inner {
   width: 80%;
@@ -273,7 +295,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3vw;
+  font-size: 4vw;
   color: #fff;
   font-style: italic;
 }
@@ -289,21 +311,25 @@ body {
   margin: auto;
   font-size: 2vw;
   background-color: #e5e4e0;
+  /* margin: 5% 0; */
 }
 
 .et-inner {
   position: relative;
   width: 80%;
-  background-color: #e5e4e0;
+  display: flex;
 }
 .et-inner .txt {
   width: 100%;
-  max-width: 1350px;
-  min-width: 360px;
+  /* max-width: 1350px;
+  min-width: 360px; */
   text-align: center;
   margin: auto;
-  margin-top: 5%;
-  font-size: 1vw;
+  padding: 5%;
+  word-break: keep-all;
+  font-size: 1.5vw;
+  background-color: #e5e4e0;
+  
 }
 
 /* recommand 영역 */
@@ -436,22 +462,6 @@ body {
   width: 100%;
   display: block;
 }
-/* stat 섹션2 */
-/* .stat-section2 {
-  margin: 2% 0;
-  width: 100%;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-} */
-/* .stat-section2 .stat {
-  width: calc((100% - 80px) / 5);
-  
-}
-.stat-section2 img {
-  width: 100%;
-  display: block;
-} */
 
 /* 하단 */
 .footer {
