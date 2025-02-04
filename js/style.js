@@ -64,8 +64,8 @@ window.onload = function () {
   // recommand 영역
   const recSwiper = new Swiper(".recSwiper", {
     navigation: {
-      nextEl: ".newarrival .swiper-button-next",
-      prevEl: ".newarrival .swiper-button-prev",
+      nextEl: ".recommand .swiper-button-next",
+      prevEl: ".recommand .swiper-button-prev",
     },
     slidesPerView: 2,
     spaceBetween: 15,

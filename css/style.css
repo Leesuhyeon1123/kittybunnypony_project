@@ -167,7 +167,7 @@ body {
   display: block;
   object-fit: cover;
 }
-.visualSwiper  .swiper-pagination-bullet-active{
+.visualSwiper .swiper-pagination-bullet-active {
   background: #fff;
 }
 /* ------best seller------ 영역 */
@@ -177,19 +177,16 @@ body {
   padding: 4% 0;
   margin: auto;
   position: relative;
-  background-color: yellow;
 }
 .bt-inner h2 {
   margin: 10% 0 5% 0;
   text-align: center;
   font-size: 35px;
   font-weight: bold;
-  background-color: orange;
 }
 .bestSwiper {
   width: 80% !important;
   width: auto;
-  background-color: blue;
 }
 
 .bestSwiper .swiper-slide img {
@@ -233,7 +230,6 @@ body {
   padding: 5% 0;
   margin: auto;
   position: relative;
-  background-color: pink;
 
   /* background-color: pink; */
 }
@@ -242,11 +238,10 @@ body {
   text-align: center;
   font-size: 35px;
   font-weight: bold;
-  background-color: aqua;
 }
+
 .newSwiper {
   width: 80%;
-  background-color: blue;
 }
 
 .newSwiper .swiper-slide img {
@@ -353,6 +348,12 @@ body {
 }
 .banner1 img {
   width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: filter 0.5s ease;
+}
+.banner1:hover img {
+  filter: brightness(30%);
 }
 .banner1 p {
   width: 100%;
@@ -379,7 +380,14 @@ body {
 }
 .banner2 img {
   width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: filter 0.5s ease;
 }
+.banner2:hover img {
+  filter: brightness(30%);
+}
+
 .banner2 p {
   width: 100%;
   position: absolute;
