@@ -178,7 +178,6 @@ body {
 }
 .m-visualSwiper {
   width: 100%;
-  background-color: pink;
   height: 500px;
 }
 .m-visualSwiper .swiper-slide {
