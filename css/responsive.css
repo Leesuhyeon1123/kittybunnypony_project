@@ -10,6 +10,9 @@
   .icon2 {
     display: none;
   }
+  .login > li > a > p {
+    font-size: 15px !important;
+  }
   /* 비주얼 영역 */
   .visualSwiper {
     width: 100%;
@@ -103,6 +106,10 @@
   .icon2 {
     display: none;
   }
+  .login > li > a > p {
+    font-size: 18px !important;
+    display: block;
+  }
   .visual {
     display: none;
   }
@@ -182,6 +189,9 @@
     right: 35px;
     font-size: 30px !important;
     font-weight: bold;
+  }
+  .stat-section1 .stat {
+    width: calc((100% - 80px) / 3) !important;
   }
   /* footer 영역*/
   .info1 li {
