@@ -95,6 +95,20 @@
   p {
     font-size: 15px !important;
   }
+  /* footer 영역 */
+  .info1 li {
+    font-size: 12px;
+    line-height: -2px;
+    display: block;
+  }
+
+  .footer-right {
+    display: none !important;
+  }
+  .footer-left .logo {
+    width: 200px !important;
+    margin-bottom: 50px;
+  }
 }
 
 /* 모바일 */
@@ -191,7 +205,7 @@
     font-weight: bold;
   }
   .stat-section1 .stat {
-    width: calc((100% - 80px) / 3) !important;
+    width: calc((100% - 40px) / 3) !important;
   }
   /* footer 영역*/
   .info1 li {
@@ -199,5 +213,9 @@
   }
   .footer-right {
     display: none !important;
+  }
+  .footer-left .logo {
+    width: 190px !important;
+    margin-bottom: 50px;
   }
 }

@@ -481,8 +481,6 @@ body {
 }
 .footer-left {
   width: 80%;
-
-  /* background-color: red; */
 }
 /* 로고 */
 .footer-left .logo {
@@ -506,8 +504,10 @@ body {
   font-style: normal;
   gap: 40px;
   font-size: 14px;
-  display: block;
-  /* background-color: pink; */
+}
+.info1 {
+  display: flex;
+  flex-wrap: wrap;
 }
 /* 푸터 오른쪽 */
 .footer-right {
