@@ -218,6 +218,15 @@
     object-fit: cover !important;
     display: block !important;
   }
+
+  .brand-title {
+    font-size: 15px !important;
+  }
+  .brand-description {
+    margin-top: 35px !important;
+    font-weight: normal !important;
+    font-size: 15px !important;
+  }
   /* stat 영역 */
   .stat-section1 .stat {
     width: calc((100% - 40px) / 3) !important;
